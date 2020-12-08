@@ -1,0 +1,167 @@
+object Form1: TForm1
+  Left = 511
+  Top = 84
+  Width = 829
+  Height = 704
+  Caption = 'Gravaodr de Macros'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ListView1: TListView
+    Left = 0
+    Top = 338
+    Width = 821
+    Height = 320
+    Align = alClient
+    Columns = <
+      item
+        Caption = 'Action'
+      end
+      item
+        Caption = 'Value'
+      end
+      item
+        Caption = 'Label'
+      end
+      item
+        Caption = 'Comment'
+      end>
+    TabOrder = 0
+    ViewStyle = vsReport
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 193
+    Width = 821
+    Height = 145
+    Align = alTop
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 536
+      Top = 64
+      Width = 32
+      Height = 13
+      Caption = 'Label1'
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 658
+    Width = 821
+    Height = 19
+    Panels = <
+      item
+        Width = 50
+      end>
+  end
+  object Memo1: TMemo
+    Left = 80
+    Top = 264
+    Width = 665
+    Height = 337
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 3
+  end
+  object pgPrincipal: TPageControl
+    Left = 0
+    Top = 0
+    Width = 821
+    Height = 193
+    ActivePage = TabSheet4
+    Align = alTop
+    OwnerDraw = True
+    TabOrder = 4
+    OnDrawTab = pgPrincipalDrawTab
+    OnMouseDown = pgPrincipalMouseDown
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      object Label2: TLabel
+        Left = 536
+        Top = 64
+        Width = 56
+        Height = 13
+        Caption = 'aba arquivo'
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'TabSheet2'
+      ImageIndex = 1
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'TabSheet3'
+      ImageIndex = 2
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'TabSheet4'
+      ImageIndex = 3
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 312
+    Top = 352
+    Width = 289
+    Height = 193
+    ActivePage = TabSheet7
+    OwnerDraw = True
+    Style = tsButtons
+    TabOrder = 5
+    OnDrawTab = PageControl1DrawTab
+    object TabSheet5: TTabSheet
+      Caption = 'TabSheet5'
+    end
+    object TabSheet6: TTabSheet
+      Caption = 'TabSheet6'
+      ImageIndex = 1
+    end
+    object TabSheet7: TTabSheet
+      Caption = 'TabSheet7'
+      ImageIndex = 2
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 208
+    Top = 280
+    object New1: TMenuItem
+      Caption = '&New'
+    end
+    object Open1: TMenuItem
+      Caption = '&Open'
+    end
+    object Recentfiles1: TMenuItem
+      Caption = '&Recent files'
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object Save1: TMenuItem
+      Caption = '&Save'
+    end
+    object SaveAs1: TMenuItem
+      Caption = '&Save &As'
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object Settings1: TMenuItem
+      Caption = 'Settings'
+    end
+    object N3: TMenuItem
+      Caption = '-'
+    end
+    object Exit1: TMenuItem
+      Caption = '&Exit'
+      OnClick = Exit1Click
+    end
+  end
+end
